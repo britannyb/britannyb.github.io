@@ -1,0 +1,1071 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 999;
+    background-color:rgba(0,0,0,0.8);
+}
+nav ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    text-align: center;
+    margin: 5% 0;
+}
+nav ul li:first-of-type, nav ul li :last-of-type {
+    margin-bottom: 0;
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li #logo {
+    width: 165px;
+    margin: 20px 0;
+}
+nav ul li a img {
+    width: 80px;
+}
+nav ul li a img:hover {
+    background-size: cover;
+}
+nav ul li #homeButton img:hover {
+    background-image: url(../images/homeActive.png);
+}
+nav ul li #skillsButton img:hover {
+    background-image: url(../images/skillsActive.png);
+}
+nav ul li #projectsButton img:hover {
+    background-image: url(../images/projectsActive.png);
+}
+nav ul li #aboutButton img:hover {
+    background-image: url(../images/aboutActive.png);
+}
+nav ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+nav ul li button img {
+    max-width: 90px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+nav ul li p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+nav ul li #homeButton {
+    color: #506874;
+}
+nav ul li #skillsButton {
+    color: #B975A2;
+}
+nav ul li #projectsButton {
+    color: #757570;
+}
+nav ul li #aboutButton {
+    color: #B00E29;
+}
+.darkMode {
+    background: #000000 !important;
+}
+.darkColor {
+    background-color: #000000 !important;
+}
+#home, #skills, #projects, #about {
+    padding-left: 200px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#home {
+    position: relative;
+    background: url(../images/white.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#homeContent {
+    max-width: 1220px;
+    width: 100%;
+    display: inline-flex;
+    margin-top: 4%;
+    padding-bottom: 140px;
+}
+#logic {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    margin-top: 140px;
+}
+#logicBackground {
+    max-width: 642px;
+    width: 100%;
+    animation: float 9s ease-in-out infinite;
+    animation-direction: reverse;
+}
+#logicGirl {
+    position: absolute;
+    left: 25%;
+    max-width: 362px;
+    width: 100%;
+    margin-top: 45px;
+    animation: float 4s ease-in-out infinite;
+}
+#homeText {
+    position: absolute;
+    max-width: 800px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 150px;
+    margin-left: 220px;
+}
+#homeText h1, #homeText h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 64px;
+    color: #636363;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 25px 0;
+}
+#homeText h2 span {
+    display: block;
+}
+#homeText h2 #plus {
+    margin-right: 80px;
+}
+#homeText h2 #logicText, #homeText h2 #creativityText {
+    font-size: 72px;
+    color: #8F8F8F;
+}
+#homeText h2 #logicText {
+    text-align: left;
+}
+#homeText h2 #creativityText {
+    text-align: right;
+    margin-left: 25px;
+}
+#homeText hr {
+    height: 8px;
+    background-color: #000000;
+    border-style: inset;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#homeText .lightLine {
+    background-color: #569ECF !important;
+}
+.light {
+    color: #FFFFFF!important;
+}
+#homeText h1 {
+    font-size: 72px;
+    color: #000000;
+}
+#creativity {
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+#creativityPen {
+    padding-top: 50px;
+    max-width: 642px;
+    width: 100%;
+    transform: rotate(-23.06deg);
+    animation: float 5s ease-in-out infinite;
+}
+#creativityGirl {
+    position: absolute;
+    left: 25%;
+    max-width: 403px;
+    width: 100%;
+    animation: float 6s ease-in-out infinite;
+    animation-direction: reverse;
+}
+@keyframes float {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(15px);}
+    100%{transform: translateY(-0px);}    
+}
+#skills {
+    position: relative;
+    background: url(../images/pink.jpg) center no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding: 85px 0 85px 290px;
+}
+.titleText, .description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    color: #000000;
+}
+.blobContainer {
+    position: relative;
+    margin: 15px;
+}
+.blob {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 37% 63% 70% 30% / 45% 45% 55% 55%;
+    background-color: #EBB0DF;
+    animation: move 12s ease-in-out infinite;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.blobBorder {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 10px;
+    left: 20px;
+    border: 4px solid #B46B9B;
+    border-radius: 37% 63% 70% 30% / 45% 45% 55% 55%;
+    animation: move 12s ease-in-out infinite;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.blob:hover, .blobBorder:hover {
+    animation-play-state: paused;
+}
+@keyframes move {
+    0%{border-radius: 37% 63% 70% 30% / 45% 45% 55% 55%;}
+    10%{border-radius: 45% 55% 54% 46% / 45% 38% 62% 55%;}
+    20%{border-radius: 59% 41% 67% 33% / 45% 31% 69% 55%;}
+    30%{border-radius: 44% 56% 60% 40% / 33% 59% 41% 67%;}
+    40%{border-radius: 52% 48% 41% 59% / 53% 63% 37% 47%;}
+    50%{border-radius: 65% 35% 52% 48% / 43% 39% 61% 57%;}
+    60%{border-radius: 42% 58% 58% 42% / 34% 62% 38% 66%;}
+    70%{border-radius: 66% 34% 61% 39% / 43% 72% 28% 57%;}
+    80%{border-radius: 28% 72% 41% 59% / 63% 63% 37% 37%;}
+    90%{border-radius: 54% 46% 55% 45% / 64% 49% 51% 36%;}
+    100%{border-radius: 37% 63% 70% 30% / 45% 45% 55% 55%;}
+}
+.title {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1400px;
+    padding: 0 50px;
+    z-index: 5;
+}
+.title .titleText {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+.title .blobContainer {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+#skills .title .blobContainer {
+    top: -80px;
+}
+.boxFrame, .box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 940px;
+    width: 100%;
+    border: 4px solid #FFFFFF;
+    box-sizing: border-box;
+}
+.boxFrame {
+    position: absolute;
+    left: calc(50% + 25px);
+    height: 600px;
+}
+.box {
+    left: calc(50% - 100px);
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    min-height: 600px;
+    padding: 20px 50px;
+    margin-top: 20px;
+}
+.box .titleText {
+    position: relative;
+    font-size: 36px;
+    margin: 0;
+    padding-left: 30px;
+}
+.box .titleText::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #FFFFFF;
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.box .boxList {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+.box .boxList ul {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 30px;
+}
+#projects {
+    position: relative;
+    background: url(../images/grey.jpg) top center no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding: 50px 20px 50px 260px;
+}
+#projects .title {
+    position: relative;
+    min-height: 290px;
+}
+#projects .title .left {
+    position: absolute;
+    top: -20px;
+    left: -25px;
+}
+#projects .title .right {
+    position: absolute;
+    top: 8%;
+    left: 80%;
+}
+#projects .title .titleText {
+    padding-top: 50px;
+}
+#projects .title .description {
+    position: relative;
+    font-size: 36px;
+    font-weight: normal;
+    z-index: 6;
+    margin: 0;
+}
+#projectsBlob {
+    height: 280px;
+    width: 245px;
+    background-color: #C4C4C4;
+    animation-duration: 15s;
+    animation-direction: reverse;
+}
+#projectsBlobBorder {
+    height: 280px;
+    width: 245px;
+    top: 12px;
+    left: -15px;
+    border: 4px solid #8A8A8A;
+    animation-duration: 15s;
+    animation-direction: reverse;
+}
+#projectsBlobB {
+    height: 190px;
+    width: 185px;
+    background-color: #E0E0E0;
+    animation-duration: 15s;
+    animation-direction: reverse;
+}
+#projectsBlobBorderB {
+    height: 190px;
+    width: 185px;
+    top: 12px;
+    left: -15px;
+    border: 4px solid #C4C4C4;
+    animation-duration: 8s;
+}
+.projectTitle, .projectDescription {
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin: 0;
+    z-index: 8;
+}
+.project {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    padding: 20px 50px;
+}
+#nerd .projectTitle, #nerd .projectDescription, #nerd .colorPalette {
+    text-align: right;
+}
+.projectDescription {
+    font-weight: normal;
+    font-size: 24px;
+}
+.colorPalette {
+    position: relative;
+    z-index: 5;
+}
+.colorPalette p {
+    display: inline-block;
+}
+.colorPalette div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: inline-block;
+}
+.project .blobContainer {
+    position: absolute;
+}
+#nerdBlob {
+    height: 240px;
+    width: 250px;
+    background-color: #92969A;
+    animation: move 6s ease-in-out infinite;
+}
+#nerdBlobBorder {
+    height: 240px;
+    width: 250px;
+    border-color: #5A5D61;
+    animation: move 6s ease-in-out infinite;
+}
+#nerd .blobContainer {
+    top: 20px;
+    left: 80%;
+}
+#nerd .colorPalette .circleA {
+    background: #FFFFFF;
+}
+#nerd .colorPalette .circleB {
+    background: #98AFC7;
+}
+#nerd .colorPalette .circleC {
+    background: #657383;
+}
+#nerd .colorPalette .circleD {
+    background: #333333;
+}
+.projectImages {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.projectImages img {
+    margin: 10px;
+    vertical-align: top;
+}
+#nerd .projectImages img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+#palawan .blobContainer {
+    top: -20px;
+    left: 5px;
+}
+#palawanBlob {
+    height: 260px;
+    width: 220px;
+    background-color: #8FC7C6;
+    animation: move 8s ease-in-out infinite;
+    animation-direction: reverse;
+}
+#palawanBlobBorder {
+    height: 260px;
+    width: 220px;
+    left: -15px;
+    border-color: #5D8887;
+    animation: move 8s ease-in-out infinite;
+    animation-direction: reverse;
+}
+#palawan .projectImages img {
+    max-height: 650px;
+    height: 100%;
+    width: auto;
+}
+#palawan .colorPalette .circleA {
+    background: #FFFFFF;
+}
+#palawan .colorPalette .circleB {
+    background: #5D8E42;
+}
+#palawan .colorPalette .circleC {
+    background: #3B9C9C;
+}
+#palawan .colorPalette .circleD {
+    background: #2B2B2B;
+}
+#boh .colorPalette .circleA {
+    background: #E8E6E6;
+}
+#boh .colorPalette .circleB {
+    background: #757171;
+}
+#boh .colorPalette .circleC {
+    background: #213D4D;
+}
+#boh .colorPalette .circleD {
+    background: #242323;
+}
+#boh .projectTitle, #boh .projectDescription, #boh .colorPalette {
+    text-align: right;
+}
+#boh .projectImages {
+    display: block;
+    text-align: left;
+}
+#boh .projectImages img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+}
+#boh .blobContainer {
+    top: 5px;
+    left: 75%;
+}
+#bohBlob {
+    position: relative;
+    height: 210px;
+    width: 180px;
+    background-color: #B1C8DA;
+    animation: move 10s ease-in-out infinite;
+}
+#bohBlobBorder {
+    height: 210px;
+    width: 180px;
+    top: 5px;
+    left: 15px;
+    border: 4px solid #8699A9;
+    animation: move 10s ease-in-out infinite;
+}
+#troubled .colorPalette .circleA {
+    background: #CBCBCA;
+}
+#troubled .colorPalette .circleB {
+    background: #BADA55;
+}
+#troubled .colorPalette .circleC {
+    background: #728C20;
+}
+#troubled .colorPalette .circleD {
+    background: #20262E;
+}
+#troubled .projectImages img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+#troubled .blobContainer {
+    top: 5px;
+    left: 25px;
+}
+#troubledBlob {
+    position: relative;
+    height: 260px;
+    width: 240px;
+    background-color: #B1EA79;
+    animation: move 8s ease-in-out infinite;
+    animation-direction: reverse;
+}
+#troubledBlobBorder {
+    height: 260px;
+    width: 240px;
+    top: -10px;
+    left: 5px;
+    border: 4px solid #92BB11;
+    animation: move 8s ease-in-out infinite;
+    animation-direction: reverse;
+}
+.projectContent {
+    position: relative;
+    display: inline-flex;
+    z-index: 15;
+}
+.projectContent img, .projectText {
+    max-height: 500px;
+    height: 100%;
+    width: auto;
+}
+.projectText {
+    padding: 20px;
+}
+.projectText .projectDescription {
+    font-size: 22px;
+}
+.projectText p {
+    margin: 0;
+    line-height: 1.2;
+}
+#cow .blobContainer {
+    left: 82%;
+    top: 5px;
+}
+#cowBlob {
+    position: relative;
+    height: 220px;
+    width: 200px;
+    background-color: #94BB96;
+    animation: move 9s ease-in-out infinite;
+}
+#cowBlobBorder {
+    height: 220px;
+    width: 200px;
+    top: -5px;
+    left: 15px;
+    border: 4px solid #729E75;
+    animation: move 9s ease-in-out infinite;
+}
+#projectsEnd .projectTitle {
+    margin: 15px 0;
+}
+#projectsEnd .projectDescription {
+    line-height: 1.4;
+    margin: 0;
+}
+#about {
+    position: relative;
+    background: url(../images/red.jpg) top center no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding: 50px 20px 50px 260px;
+}
+#about .title .titleText {
+    padding: 50px 0;
+}
+#about #firstBlob {
+    left: 0;
+    top: 2px;
+}
+#firstBlob .blob {
+    position: relative;
+    height: 260px;
+    width: 240px;
+    background-color: #D36072;
+    animation: move 9s ease-in-out infinite;
+}
+#firstBlob .blobBorder {
+    height: 260px;
+    width: 240px;
+    top: 5px;
+    left: -15px;
+    border: 4px solid #A72B3F;
+    animation: move 9s ease-in-out infinite;
+}
+#about #secondBlob {
+    left: 280px;
+    top: 8px;
+}
+#secondBlob .blob {
+    position: relative;
+    height: 160px;
+    width: 120px;
+    background-color: #B34153;
+    animation: move 12s ease-in-out infinite;
+    animation-direction: reverse;
+}
+#secondBlob .blobBorder {
+    height: 160px;
+    width: 120px;
+    top: 5px;
+    left: 12px;
+    border: 4px solid #973242;
+    animation: move 12s ease-in-out infinite;
+    animation-direction: reverse;
+}
+.aboutContent {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: right;
+    z-index: 9;
+}
+.aboutContent p {
+    position: relative;
+    line-height: 1.2;
+    text-align: left;
+}
+.aboutContent .projectTitle {
+    max-width: 720px;
+    text-align: right;
+    margin-top: 2px;
+}
+.aboutContent img {
+    position: relative;
+    height: 100%;
+    width: auto;
+    box-shadow: -2px 14px 12px rgba(0, 0, 0, 0.25);
+}
+.aboutContent #drawingA {
+    position: absolute;
+    max-height: 480px;
+    z-index: 12;
+    left: -20px;
+    top: 110px;
+}
+.aboutContent #drawingB {
+    max-height: 550px;
+}
+.aboutContent #drawingC {
+    width: 100%;
+    margin: 15px 0;
+}
+#aboutPen {
+    position: absolute;
+    max-width: 642px;
+    width: 100%;
+    height: auto;
+    top: 145px;
+    right: -120px;
+    box-shadow: none;
+}
+#backgroundSources {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Roboto;
+    font-size: 24px;
+    color: #000000;
+    margin: 25px 0;
+}
+#backgroundSources ul {
+    margin: 0;
+    padding: 0 0 0 25px;
+}
+#backgroundSources ul li {
+    margin: 0;
+    padding: 0;
+}
+#backgroundSources .top {
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+}
+#backgroundSources p {
+    margin: 0;
+}
+#backgroundSources a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #5A5D62;
+}
+#backgroundSources a:hover {
+    color: #2F3B56;
+}
+footer {
+    text-align: right;
+    background-color: #454545;
+    padding: 15px 20px;
+}
+footer p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 0;
+}
+@media only screen and (max-width: 1650px) {
+    #homeText {
+        z-index: 24;
+    }
+    .box {
+        left: 50%;
+    }
+    .boxFrame {
+        left: calc(55% - 5px);
+    }
+    #home, #skills, #projects, #about {
+        padding-left: 220px;
+    }
+    #skills .blob, #skills .blobBorder {
+        height: 180px;
+        width: 180px;
+    }
+    .box .boxList {
+        margin: 15px 0;
+    }
+    .title {
+        padding: 20px 45px;
+    }
+    .titleText, .description, .projectDescription {
+        line-height: 1.2;
+    }
+    .projectContent {
+        display: block;
+        text-align: center;
+    }
+    .projectContent img, .projectText {
+        max-height: unset;
+        height: auto;
+        width: 100%;
+    }
+    .projectText {
+        padding: 0 20px;
+    }
+    .projectContent p {
+        text-align: left;
+    }
+    .projectImages img {
+        margin: 5px 0;
+    }
+    #palawan .projectImages img {
+        max-height: unset;
+        height: auto;
+        max-width: 600px;
+        width: 100%;
+    }
+    .aboutContent #drawingA {
+        display: none;
+    }
+    .aboutContent #drawingB {
+        max-height: unset;
+        height: auto;
+        width: 100%;
+    }
+    #aboutPen {
+        display: none;
+    }
+    .aboutContent .projectTitle {
+        max-width: 100%;
+        margin-top: 0;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 1420px) {
+    #homeContent {
+        max-width: 1220px;
+        width: 100%;
+        display: inline-flex;
+        margin-top: 12%;
+    }
+    #homeText {
+        top: 50px;
+        bottom: unset;
+        margin-left: 80px;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .boxFrame {
+        left: calc(55% + 25px);
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .box {
+        width: 96%;
+        min-height: 465px;
+        padding: 25px 20px;
+    }
+    .boxFrame {
+        display: none;
+    }
+    #homeText h2 #logicText, #homeText h2 #creativityText, #homeText h1 {
+        font-size: 52px;
+    }
+    #homeText h1, #homeText h2 {
+        line-height: 55px;
+        margin: 5px 0;
+    }
+}
+@media only screen and (max-width: 1105px) {
+    #homeContent {
+        max-width: 1220px;
+        width: 100%;
+        display: block;
+        padding-bottom: 380px;
+        margin-top: 2%;
+    }
+    #creativity {
+        width: 100%;
+        margin-top: -200px
+    }
+    #creativityPen {
+        position: relative;
+        left: 4%;
+    }
+    #creativityGirl {
+        left: unset;
+        right: 0;
+    }
+    nav {
+        width: 75px;
+    }
+    nav ul li a img {
+        width: 50px;
+    }
+    nav ul li #logo {
+        width: 60px;
+    }
+    nav ul li p {
+        font-size: 14px;
+    }
+    #home, #skills, #about {
+        padding-left: 80px;
+    }
+    #projects {
+        padding-left: 95px;
+    }
+    .titleText {
+        font-size: 42px !important;
+    }
+    .description {
+        font-size: 22px !important;
+    }
+    .projectText {
+        padding: 0;
+    }
+    .projectTitle, .box .titleText {
+        font-size: 28px !important;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+    #projectsEnd .projectTitle {
+        font-size: 21px !important;
+    }
+    .projectDescription, #backgroundSources p, .projectText .projectDescription {
+        font-size: 15px;
+    }
+    #about .title {
+        padding: 20px 12px;
+    }
+    #about #firstBlob {
+        left: -15px;
+        top: -20px;
+    }
+    footer {
+        padding: 8px 15px;
+    }
+    footer p {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1040px) {
+    #logic {
+        margin-top: 20px;
+    }
+    #logic {
+        position: relative;
+        width: 100%;
+    }
+    #creativity {
+        margin-top: 0;
+    }
+    #homeText {
+        position: relative;
+        max-width: 270px;
+        margin-top: -50px;
+    }
+    #backgroundSources ul li {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 800px) {  
+    #homeText {
+        top: -90px;
+        max-width: 120px;
+        margin-top: 20px;
+        margin-left: 0;
+        left: 20px;
+        transform: none;
+    }
+    #homeText h2 #logicText, #homeText h2 #creativityText, #homeText h1 {
+        font-size: 28px;
+        text-align: left;
+    }
+    #homeText h2 #plus {
+        font-size: 65px;
+        margin-right: 0;
+        text-align: left;
+    }
+    #homeText h2 #creativityText {
+        margin-left: 0;
+    }
+    #homeText h1, #homeText h2, #homeText h2 #plus {
+        line-height: 1;
+    }
+    #homeContent {
+        padding-bottom: 400px;
+    }
+    #creativity {
+        margin-top: -200px;
+    }
+    #creativityPen {
+        padding-top: 0;
+    }
+    .box .boxList {
+        width: 100%;
+        margin: 20px 0;
+    }
+    #about {
+        padding: 25px 20px 25px 80px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #creativity {
+        margin-top: -180px;
+    }
+    nav ul li {
+        margin-bottom: 12px;
+    }
+    #logicGirl {
+        left: 0;
+    }
+    .boxList .titleText {
+        font-size: 21px !important;
+    }
+    .box .boxList ul {
+        font-size: 18px;
+    }
+    .titleText {
+        font-size: 36px !important;
+    }
+    #homeText h2 #creativityText {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #creativity {
+        margin-top: -120px;
+    }
+    #homeText {
+        margin-top: 160px;
+    }
+    .blobBorder {
+        height: 170px;
+    }
+}
