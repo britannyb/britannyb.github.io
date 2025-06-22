@@ -1,327 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Britanny - Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="britanny, portfolio">
-        <meta name="description" content="Britanny's Portfolio Website">
-        <meta name="author" content="Britanny Baldovino">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--favicon-->
-        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="images/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <!--external files-->
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <script src="scripts/script.js"></script>
-        <!--online files-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto:bold">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <nav>
+  <head>
+    <title>Britanny - Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="britanny, portfolio" />
+    <meta name="description" content="Britanny's Portfolio Website" />
+    <meta name="author" content="Britanny Baldovino" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/favicon/apple-icon-57x57.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/favicon/apple-icon-60x60.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/favicon/apple-icon-72x72.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/favicon/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/favicon/apple-icon-114x114.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/favicon/apple-icon-120x120.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/favicon/apple-icon-144x144.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/favicon/apple-icon-152x152.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-icon-180x180.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon/android-icon-192x192.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon/favicon-96x96.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--external files-->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="scripts/script.js"></script>
+    <!--online files-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto:bold" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href=""><img id="logo" src="images/logo.png" alt="logo" /></a>
+        </li>
+        <li>
+          <a id="homeButton" href="#home"
+            ><img
+              class="navImgs"
+              id="homeImg"
+              src="images/homeActive.png"
+              alt="home icon" />
+            <p>home</p></a
+          >
+        </li>
+        <li>
+          <a id="skillsButton" href="#skills"
+            ><img
+              class="navImgs"
+              id="skillsImg"
+              src="images/skills.png"
+              alt="skills icon" />
+            <p>skills</p></a
+          >
+        </li>
+        <li>
+          <a id="projectsButton" href="#projects"
+            ><img
+              class="navImgs"
+              id="projectsImg"
+              src="images/projects.png"
+              alt="projects icon" />
+            <p>projects</p></a
+          >
+        </li>
+        <li>
+          <a id="aboutButton" href="#about"
+            ><img
+              class="navImgs"
+              id="aboutImg"
+              src="images/about.png"
+              alt="about icon" />
+            <p>about me</p></a
+          >
+        </li>
+        <li>
+          <button onclick="toggleDarkMode()">
+            <img
+              id="modeImg"
+              src="images/lightMode.png"
+              alt="dark mode button" />
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div id="home">
+      <div id="homeContent">
+        <div id="logic">
+          <img
+            id="logicBackground"
+            src="images/codeBackground.png"
+            alt="an image of a program code" />
+          <img
+            id="logicGirl"
+            src="images/omen2.png"
+            alt="an illustration of a girl with a laptop" />
+        </div>
+        <div id="homeText">
+          <h2>
+            <span id="logicText">logic</span><span id="plus">+</span
+            ><span id="creativityText">creativity</span>
+          </h2>
+          <hr id="darkLine" />
+          <h1 class="dark">britanny</h1>
+        </div>
+        <div id="creativity">
+          <img
+            id="creativityPen"
+            src="images/drawingPen.png"
+            alt="an illustration of a drawing tablet pen" />
+          <img
+            id="creativityGirl"
+            src="images/omen.png"
+            alt="a doodle of a girl with a laptop" />
+        </div>
+      </div>
+    </div>
+    <div id="skills">
+      <div class="title">
+        <p class="titleText dark">skills</p>
+        <div class="blobContainer">
+          <div class="blob"></div>
+          <div class="blobBorder"></div>
+        </div>
+      </div>
+      <div class="boxFrame"></div>
+      <div class="box">
+        <div class="boxList">
+          <p class="titleText dark">Programming</p>
+          <ul class="dark">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="boxList">
+          <p class="titleText dark">Database Management</p>
+          <ul class="dark">
+            <li>SQL</li>
+            <li>MySQL Server</li>
+          </ul>
+        </div>
+        <div class="boxList">
+          <p class="titleText dark">Graphics</p>
+          <ul class="dark">
+            <li>Adobe Photoshop</li>
+            <li>GIMP</li>
+            <li>Adobe XD</li>
+            <li>Figma</li>
+            <li>Blender</li>
+            <li>Sony Vegas Pro</li>
+            <li>Movavi Video Suite</li>
+          </ul>
+        </div>
+        <div class="boxList">
+          <p class="titleText dark">Productivity Tools</p>
+          <ul class="dark">
+            <li>Microsoft Office</li>
+            <li>Apple iWork</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="projects">
+      <div class="title">
+        <p class="titleText dark">projects</p>
+        <p class="description dark">
+          some of my favorite projects I made while in school
+        </p>
+        <div class="blobContainer left">
+          <div class="blob" id="projectsBlob"></div>
+          <div class="blobBorder" id="projectsBlobBorder"></div>
+        </div>
+        <div class="blobContainer right">
+          <div class="blob" id="projectsBlobB"></div>
+          <div class="blobBorder" id="projectsBlobBorderB"></div>
+        </div>
+      </div>
+      <div class="project">
+        <p class="projectTitle dark">web design + development</p>
+        <p class="projectDescription dark">
+          websites that I designed and developed by myself (with the use of
+          online resources)
+        </p>
+      </div>
+      <div class="project" id="nerd">
+        <p class="projectTitle dark">nerd emporium</p>
+        <p class="projectDescription dark">
+          an online shop for geeky merchandise
+        </p>
+        <div class="colorPalette">
+          <p class="projectDescription dark">color palette:</p>
+          <div class="circleA"></div>
+          <div class="circleB"></div>
+          <div class="circleC"></div>
+          <div class="circleD"></div>
+        </div>
+        <div class="blobContainer">
+          <div class="blob" id="nerdBlob"></div>
+          <div class="blobBorder" id="nerdBlobBorder"></div>
+        </div>
+        <div class="projectImages">
+          <img
+            src="images/nerdEmporiumLanding.jpg"
+            alt="a screenshot of nerd emporium's landing page" />
+          <img
+            src="images/nerdEmporiumHome.jpg"
+            alt="a screenshot of nerd emporium's shop homepage" />
+          <img
+            src="images/nerdEmporiumLocation.jpg"
+            alt="a screenshot of nerd emporium's location page" />
+          <img
+            src="images/nerdEmporiumContact.jpg"
+            alt="a screenshot of nerd emporium's contact page" />
+        </div>
+      </div>
+      <div class="project" id="palawan">
+        <p class="projectTitle dark">palawan</p>
+        <p class="projectDescription dark">a website showcasing Palawan</p>
+        <div class="colorPalette">
+          <p class="projectDescription dark">color palette:</p>
+          <div class="circleA"></div>
+          <div class="circleB"></div>
+          <div class="circleC"></div>
+          <div class="circleD"></div>
+        </div>
+        <div class="blobContainer">
+          <div class="blob" id="palawanBlob"></div>
+          <div class="blobBorder" id="palawanBlobBorder"></div>
+        </div>
+        <div class="projectImages">
+          <img
+            src="images/palawanHome.jpg"
+            alt="a screenshot of a palawan website's homepage" />
+          <img
+            src="images/palawanSites.jpg"
+            alt="a screenshot of a palawan website's tourist destinations page" />
+          <img
+            src="images/palawanProducts.jpg"
+            alt="a screenshot of a palawan website's products page" />
+          <img
+            src="images/palawanContact.jpg"
+            alt="a screenshot of a palawan website's contact form page" />
+        </div>
+      </div>
+      <div class="project">
+        <p class="projectTitle dark">websites made with wix</p>
+        <p class="projectDescription dark">
+          websites that I designed with the use of wix
+        </p>
+      </div>
+      <div class="project" id="boh">
+        <p class="projectTitle dark">boxofficehits</p>
+        <p class="projectDescription dark">an online ticketing website</p>
+        <div class="colorPalette">
+          <p class="projectDescription dark">color palette:</p>
+          <div class="circleA"></div>
+          <div class="circleB"></div>
+          <div class="circleC"></div>
+          <div class="circleD"></div>
+        </div>
+        <div class="blobContainer">
+          <div class="blob" id="bohBlob"></div>
+          <div class="blobBorder" id="bohBlobBorder"></div>
+        </div>
+        <div class="projectImages">
+          <img
+            src="images/BOH.jpg"
+            alt="a screenshot of boxofficehits' homepage" />
+        </div>
+      </div>
+      <div class="project" id="troubled">
+        <p class="projectTitle dark">troubled</p>
+        <p class="projectDescription dark">
+          a website made for the troubled youth
+        </p>
+        <div class="colorPalette">
+          <p class="projectDescription dark">color palette:</p>
+          <div class="circleA"></div>
+          <div class="circleB"></div>
+          <div class="circleC"></div>
+          <div class="circleD"></div>
+        </div>
+        <div class="blobContainer">
+          <div class="blob" id="troubledBlob"></div>
+          <div class="blobBorder" id="troubledBlobBorder"></div>
+        </div>
+        <div class="projectImages">
+          <img
+            src="images/troubledHome.jpg"
+            alt="a screenshot of troubled's homepage" />
+          <img
+            src="images/troubledActivities.jpg"
+            alt="a screenshot of troubled's activities page" />
+          <img
+            src="images/troubledGames.jpg"
+            alt="a screenshot of troubled's games page" />
+          <img
+            src="images/troubledGame.jpg"
+            alt="a screenshot of troubled's sample game" />
+        </div>
+      </div>
+      <div class="project">
+        <p class="projectTitle dark">java game</p>
+        <p class="projectDescription dark">
+          a game made with Java where I was the level designer and the
+          programmer for some functionalities
+        </p>
+      </div>
+      <div class="project" id="cow">
+        <div class="projectContent">
+          <img
+            src="images/game.jpg"
+            alt="a screenshot of the cow farm java game" />
+          <div class="projectText">
+            <p class="projectTitle dark">Cow Farm</p>
+            <p class="projectDescription dark">
+              In a seemingly pleasant farm with hedges that appear to be forming
+              a maze, you are a cow standing at the entrance. A young girl
+              wanders with you but is intangible and randomly teleports while
+              moving around the farm. Surrounded by these mysterious elements,
+              what exactly is going on and where exactly should you go?
+            </p>
+            <p class="projectDescription dark">
+              <br /><b>Controls:</b><br />
+              <b>W</b> - go up | <b>A</b> - go left | <b>S</b> - go down |
+              <b>D</b> - go right <br />
+              <b>E</b> - eat grass <br />
+              <b>Space bar</b> - jump if facing left or right; smile if facing
+              front or back <br />
+              *Once idle, the cow will have an infuriated expression <br />
+              *Randomly, the cow gets moved by unknown forces
+            </p>
+          </div>
+        </div>
+        <div class="blobContainer">
+          <div class="blob" id="cowBlob"></div>
+          <div class="blobBorder" id="cowBlobBorder"></div>
+        </div>
+      </div>
+      <div class="project" id="projectsEnd">
+        <p class="projectTitle dark">
+          other projects I made in school that are not featured here:
+        </p>
+        <p class="projectDescription dark">Budget Calculator made with Java</p>
+        <p class="projectDescription dark">
+          Educational Website for Web Technologies
+        </p>
+        <p class="projectDescription dark">
+          Data Analytical Framework made with Python
+        </p>
+        <p class="projectDescription dark">
+          Mobile Responsive Emergency Map made with web technologies and
+          Firebase
+        </p>
+        <p class="projectDescription dark">
+          OJT Monitoring Application made with web technologies
+        </p>
+        <p class="projectDescription dark">
+          and alot of other websites and applications
+        </p>
+      </div>
+    </div>
+    <div id="about">
+      <div class="title">
+        <p class="titleText dark">about me</p>
+        <div class="blobContainer" id="firstBlob">
+          <div class="blob"></div>
+          <div class="blobBorder"></div>
+        </div>
+        <div class="blobContainer" id="secondBlob">
+          <div class="blob"></div>
+          <div class="blobBorder"></div>
+        </div>
+        <div class="aboutContent">
+          <img
+            id="drawingA"
+            src="images/sabrina.jpg"
+            alt="a drawing of Sabrina Spellman" />
+          <img
+            id="drawingB"
+            src="images/sister.jpg"
+            alt="a drawing of a girl with a dog and food" />
+          <img
+            id="aboutPen"
+            src="images/drawingPen.png"
+            alt="an illustration of a drawing tablet pen" />
+          <p class="projectTitle dark">Britanny Baldovino</p>
+          <p class="projectDescription dark">
+            I graduated Cum Laude with a bachelor's degree in Information
+            Technology from SLU, PH.
+          </p>
+          <p class="upper projectDescription dark">
+            I like using technology as an outlet for my creativity which is why
+            I love drawing, designing and programming.
+          </p>
+          <p class="upper projectDescription dark">
+            <b>Fun fact:</b> I made the icons and drawings in this website.
+          </p>
+          <div id="backgroundSources">
+            <p class="top dark">
+              For the images used as backgrounds in light mode, I found them on
+              Pexels:
+            </p>
             <ul>
-                <li><a href=""><img id="logo" src="images/logo.png" alt="logo"></a></li>
-                <li><a id="homeButton" href="#home"><img class="navImgs" id="homeImg" src="images/homeActive.png" alt="home icon"><p>home</p></a></li>
-                <li><a id="skillsButton" href="#skills"><img class="navImgs" id="skillsImg" src="images/skills.png" alt="skills icon"><p>skills</p></a></li>
-                <li><a id="projectsButton" href="#projects"><img class="navImgs" id="projectsImg" src="images/projects.png" alt="projects icon"><p>projects</p></a></li>
-                <li><a id="aboutButton" href="#about"><img class="navImgs" id="aboutImg" src="images/about.png" alt="about icon"><p>about me</p></a></li>
-                <li><button onclick="toggleDarkMode()"><img id="modeImg" src="images/lightMode.png" alt="dark mode button"></button></li>
+              <li class="dark">
+                <p>
+                  Home Background - Photo by
+                  <a
+                    href="https://www.pexels.com/@gdtography-277628?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                    >gdtography</a
+                  >
+                  from
+                  <a
+                    href="https://www.pexels.com/photo/modern-art-painting-in-white-950241/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                    >Pexels</a
+                  >
+                </p>
+              </li>
+              <li class="dark">
+                <p>
+                  Skills Background - Photo by
+                  <a
+                    href="https://www.pexels.com/@anniroenkae?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                    >Anni Roenkae</a
+                  >
+                  from
+                  <a
+                    href="https://www.pexels.com/photo/pink-fabric-romance-texture-background-2318068/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                    >Pexels</a
+                  >
+                </p>
+              </li>
+              <li class="dark">
+                <p>
+                  Projects Background - Photo by
+                  <a
+                    href="https://www.pexels.com/@bruzewalker?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                    >Bruno Cervera</a
+                  >
+                  from
+                  <a
+                    href="https://www.pexels.com/photo/art-space-abstract-white-3062948/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                    >Pexels</a
+                  >
+                </p>
+              </li>
+              <li class="dark">
+                <p>
+                  About Me Background - Photo by
+                  <a
+                    href="https://www.pexels.com/@eberhardgross?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                    >eberhard grossgasteiger</a
+                  >
+                  from
+                  <a
+                    href="https://www.pexels.com/photo/filtered-mountains-2088208/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                    >Pexels</a
+                  >
+                </p>
+              </li>
             </ul>
-        </nav>
-        <div id="home">
-            <div id="homeContent">
-                <div id="logic">
-                    <img id="logicBackground" src="images/codeBackground.png" alt="an image of a program code">
-                    <img id="logicGirl" src="images/omen2.png" alt="an illustration of a girl with a laptop">
-                </div>
-                <div id="homeText">
-                    <h2><span id="logicText">logic</span><span id="plus">+</span><span id="creativityText">creativity</span></h2>
-                    <hr id="darkLine">
-                    <h1 class="dark">britanny</h1>
-                </div>
-                <div id="creativity">
-                    <img id="creativityPen" src="images/drawingPen.png" alt="an illustration of a drawing tablet pen">
-                    <img id="creativityGirl" src="images/omen.png" alt="a doodle of a girl with a laptop">
-                </div>
-            </div>
+          </div>
         </div>
-        <div id="skills">
-            <div class="title">
-                <p class="titleText dark">skills</p>
-                <div class="blobContainer">
-                    <div class="blob">
-                    </div>
-                    <div class="blobBorder">
-                    </div>
-                </div>
-            </div>
-            <div class="boxFrame">
-            </div>
-            <div class="box">
-                <div class="boxList">
-                    <p class="titleText dark">Programming</p>
-                    <ul class="dark">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-                <div class="boxList">
-                    <p class="titleText dark">Database Management</p>
-                    <ul class="dark">
-                        <li>SQL</li>
-                        <li>MySQL Server</li>
-                    </ul>
-                </div>
-                <div class="boxList">
-                    <p class="titleText dark">Graphics</p>
-                    <ul class="dark">
-                        <li>Adobe Photoshop</li>
-                        <li>GIMP</li>
-                        <li>Adobe XD</li>
-                        <li>Figma</li>
-                        <li>Blender</li>
-                        <li>Sony Vegas Pro</li>
-                        <li>Movavi Video Suite</li>
-                    </ul>
-                </div>
-                <div class="boxList">
-                    <p class="titleText dark">Productivity Tools</p>
-                    <ul class="dark">
-                        <li>Microsoft Office</li>
-                        <li>Apple iWork</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="projects">
-            <div class="title">
-                <p class="titleText dark">projects</p>
-                <p class="description dark">some of my favorite projects I made while in school</p>
-                <div class="blobContainer left">
-                    <div class="blob" id="projectsBlob">
-                    </div>
-                    <div class="blobBorder" id="projectsBlobBorder">
-                    </div>
-                </div>
-                <div class="blobContainer right">
-                    <div class="blob" id="projectsBlobB">
-                    </div>
-                    <div class="blobBorder" id="projectsBlobBorderB">
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <p class="projectTitle dark">web design + development</p>
-                <p class="projectDescription dark">websites that I designed and developed by myself (with the use of online resources)</p>
-            </div>
-            <div class="project" id="nerd">
-                <p class="projectTitle dark">nerd emporium</p>
-                <p class="projectDescription dark">an online shop for geeky merchandise</p>
-                <div class="colorPalette">
-                    <p class="projectDescription dark">color palette:</p>
-                    <div class="circleA"></div>
-                    <div class="circleB"></div>
-                    <div class="circleC"></div>
-                    <div class="circleD"></div>
-                </div>
-                <div class="blobContainer">
-                    <div class="blob" id="nerdBlob">
-                    </div>
-                    <div class="blobBorder" id="nerdBlobBorder">
-                    </div>
-                </div>
-                <div class="projectImages">
-                    <img src="images/nerdEmporiumLanding.jpg" alt="a screenshot of nerd emporium's landing page">
-                    <img src="images/nerdEmporiumHome.jpg" alt="a screenshot of nerd emporium's shop homepage">
-                    <img src="images/nerdEmporiumLocation.jpg" alt="a screenshot of nerd emporium's location page">
-                    <img src="images/nerdEmporiumContact.jpg" alt="a screenshot of nerd emporium's contact page">
-                </div>
-            </div>
-            <div class="project" id="palawan">
-                <p class="projectTitle dark">palawan</p>
-                <p class="projectDescription dark">a website showcasing Palawan</p>
-                <div class="colorPalette">
-                    <p class="projectDescription dark">color palette:</p>
-                    <div class="circleA"></div>
-                    <div class="circleB"></div>
-                    <div class="circleC"></div>
-                    <div class="circleD"></div>
-                </div>
-                <div class="blobContainer">
-                    <div class="blob" id="palawanBlob">
-                    </div>
-                    <div class="blobBorder" id="palawanBlobBorder">
-                    </div>
-                </div>
-                <div class="projectImages">
-                    <img src="images/palawanHome.jpg" alt="a screenshot of a palawan website's homepage">
-                    <img src="images/palawanSites.jpg" alt="a screenshot of a palawan website's tourist destinations page">
-                    <img src="images/palawanProducts.jpg" alt="a screenshot of a palawan website's products page">
-                    <img src="images/palawanContact.jpg" alt="a screenshot of a palawan website's contact form page">
-                </div>
-            </div>
-            <div class="project">
-                <p class="projectTitle dark">websites made with wix</p>
-                <p class="projectDescription dark">websites that I designed with the use of wix</p>
-            </div>
-            <div class="project" id="boh">
-                <p class="projectTitle dark">boxofficehits</p>
-                <p class="projectDescription dark">an online ticketing website</p>
-                <div class="colorPalette">
-                    <p class="projectDescription dark">color palette:</p>
-                    <div class="circleA"></div>
-                    <div class="circleB"></div>
-                    <div class="circleC"></div>
-                    <div class="circleD"></div>
-                </div>
-                <div class="blobContainer">
-                    <div class="blob" id="bohBlob">
-                    </div>
-                    <div class="blobBorder" id="bohBlobBorder">
-                    </div>
-                </div>
-                <div class="projectImages">
-                    <img src="images/BOH.jpg" alt="a screenshot of boxofficehits' homepage">
-                </div>
-            </div>
-            <div class="project" id="troubled">
-                <p class="projectTitle dark">troubled</p>
-                <p class="projectDescription dark">a website made for the troubled youth</p>
-                <div class="colorPalette">
-                    <p class="projectDescription dark">color palette:</p>
-                    <div class="circleA"></div>
-                    <div class="circleB"></div>
-                    <div class="circleC"></div>
-                    <div class="circleD"></div>
-                </div>
-                <div class="blobContainer">
-                    <div class="blob" id="troubledBlob">
-                    </div>
-                    <div class="blobBorder" id="troubledBlobBorder">
-                    </div>
-                </div>
-                <div class="projectImages">
-                    <img src="images/troubledHome.jpg" alt="a screenshot of troubled's homepage">
-                    <img src="images/troubledActivities.jpg" alt="a screenshot of troubled's activities page">
-                    <img src="images/troubledGames.jpg" alt="a screenshot of troubled's games page">
-                    <img src="images/troubledGame.jpg" alt="a screenshot of troubled's sample game">
-                </div>
-            </div>
-            <div class="project">
-                <p class="projectTitle dark">java game</p>
-                <p class="projectDescription dark">a game made with Java where I was the level designer and the programmer for some functionalities</p>
-            </div>
-            <div class="project" id="cow">
-                <div class="projectContent">
-                    <img src="images/game.jpg" alt="a screenshot of the cow farm java game">
-                    <div class="projectText">
-                        <p class="projectTitle dark">Cow Farm</p>
-                        <p class="projectDescription dark">In a seemingly pleasant farm with hedges that appear to be forming a maze, you are a cow standing at the entrance. A young girl wanders with you but is intangible and randomly teleports while moving around the farm. Surrounded by these mysterious elements, what exactly is going on and where exactly should you go?</p>
-                        <p class="projectDescription dark"><br><b>Controls:</b><br>
-                            <b>W</b> - go up | <b>A</b> - go left | <b>S</b> - go down | <b>D</b> - go right <br>
-                            <b>E</b> - eat grass <br>
-                            <b>Space bar</b> - jump if facing left or right; smile if facing front or back <br>
-                            *Once idle, the cow will have an infuriated expression <br>
-                            *Randomly, the cow gets moved by unknown forces</p>
-                    </div>
-                </div>
-                <div class="blobContainer">
-                    <div class="blob" id="cowBlob">
-                    </div>
-                    <div class="blobBorder" id="cowBlobBorder">
-                    </div>
-                </div>
-            </div>
-            <div class="project" id="projectsEnd">
-                <p class="projectTitle dark">other projects I made in school that are not featured here:</p>
-                <p class="projectDescription dark">Budget Calculator made with Java</p>
-                <p class="projectDescription dark">Educational Website for Web Technologies</p>
-                <p class="projectDescription dark">Data Analytical Framework made with Python</p>
-                <p class="projectDescription dark">Mobile Responsive Emergency Map made with web technologies and Firebase</p>
-                <p class="projectDescription dark">OJT Monitoring Application made with web technologies</p>
-                <p class="projectDescription dark">and alot of other websites and applications</p>
-            </div>
-        </div>
-        <div id="about">
-            <div class="title">
-                <p class="titleText dark">about me</p>
-                <div class="blobContainer" id="firstBlob">
-                    <div class="blob">
-                    </div>
-                    <div class="blobBorder">
-                    </div>
-                </div>
-                <div class="blobContainer" id="secondBlob">
-                    <div class="blob">
-                    </div>
-                    <div class="blobBorder">
-                    </div>
-                </div>
-                <div class="aboutContent">
-                    <img id="drawingA" src="images/sabrina.jpg" alt="a drawing of Sabrina Spellman">
-                    <img id="drawingB" src="images/sister.jpg" alt="a drawing of a girl with a dog and food">
-                    <img id="aboutPen" src="images/drawingPen.png" alt="an illustration of a drawing tablet pen">
-                    <p class="projectTitle dark">Britanny Baldovino</p>
-                    <p class="projectDescription dark">I graduated Cum Laude with a bachelor's degree in Information Technology from SLU, PH.</p>
-                    <img id="drawingC" src="images/code.png" alt="a screenshot of a program's source code">
-                    <p class="upper projectDescription dark">I like using technology as an outlet for my creativity which is why I love drawing, designing and programming.</p>
-                    <p class="upper projectDescription dark"><b>Fun fact:</b> I made the icons and drawings in this website.</p>
-                    <div id="backgroundSources">
-                        <p class="top dark">For the images used as backgrounds in light mode, I found them on Pexels:</p>
-                        <ul>
-                            <li class="dark"><p>Home Background - Photo by <a href="https://www.pexels.com/@gdtography-277628?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">gdtography</a> from <a href="https://www.pexels.com/photo/modern-art-painting-in-white-950241/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Pexels</a></p></li>
-                            <li class="dark"><p>Skills Background - Photo by <a href="https://www.pexels.com/@anniroenkae?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Anni Roenkae</a> from <a href="https://www.pexels.com/photo/pink-fabric-romance-texture-background-2318068/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Pexels</a></p></li>
-                            <li class="dark"><p>Projects Background - Photo by <a href="https://www.pexels.com/@bruzewalker?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Bruno Cervera</a> from <a href="https://www.pexels.com/photo/art-space-abstract-white-3062948/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Pexels</a></p></li>
-                            <li class="dark"><p>About Me Background - Photo by <a href="https://www.pexels.com/@eberhardgross?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">eberhard grossgasteiger</a> from <a href="https://www.pexels.com/photo/filtered-mountains-2088208/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Pexels</a></p></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer id="foot">
-            <p><b>britanny</b> 2020</p>
-        </footer>
-        <script>
-            $(document).ready(function(e) { 
-                var homeDistance = $("#home").offset().top - 120, $window = $(window);
-                var skillsDistance = $("#skills").offset().top - 120, $window = $(window);
-                var projectsDistance = $("#projects").offset().top - 120, $window = $(window);
-                var aboutDistance = $("#about").offset().top - 120, $window = $(window);
-                $window.scroll(function() {
-                    document.getElementById("homeImg").src = "images/home.png";
-                    document.getElementById("skillsImg").src = "images/skills.png";
-                    document.getElementById("projectsImg").src = "images/projects.png";
-                    document.getElementById("aboutImg").src = "images/about.png";
-                    if ( $window.scrollTop() > aboutDistance ) {
-                        document.getElementById("aboutImg").src = "images/aboutActive.png";
-                    } else if ( $window.scrollTop() > projectsDistance ) {
-                        document.getElementById("projectsImg").src = "images/projectsActive.png";
-                    } else if ( $window.scrollTop() > skillsDistance ) {
-                        document.getElementById("skillsImg").src = "images/skillsActive.png";
-                    } else if ( $window.scrollTop() > homeDistance ) {
-                        document.getElementById("homeImg").src = "images/homeActive.png";
-                    }
-                });               
-            });
-        </script> 
-    </body>
+      </div>
+    </div>
+    <footer id="foot">
+      <p><b>britanny</b> 2020</p>
+    </footer>
+    <script>
+      $(document).ready(function (e) {
+        var homeDistance = $("#home").offset().top - 120,
+          $window = $(window);
+        var skillsDistance = $("#skills").offset().top - 120,
+          $window = $(window);
+        var projectsDistance = $("#projects").offset().top - 120,
+          $window = $(window);
+        var aboutDistance = $("#about").offset().top - 120,
+          $window = $(window);
+        $window.scroll(function () {
+          document.getElementById("homeImg").src = "images/home.png";
+          document.getElementById("skillsImg").src = "images/skills.png";
+          document.getElementById("projectsImg").src = "images/projects.png";
+          document.getElementById("aboutImg").src = "images/about.png";
+          if ($window.scrollTop() > aboutDistance) {
+            document.getElementById("aboutImg").src = "images/aboutActive.png";
+          } else if ($window.scrollTop() > projectsDistance) {
+            document.getElementById("projectsImg").src =
+              "images/projectsActive.png";
+          } else if ($window.scrollTop() > skillsDistance) {
+            document.getElementById("skillsImg").src =
+              "images/skillsActive.png";
+          } else if ($window.scrollTop() > homeDistance) {
+            document.getElementById("homeImg").src = "images/homeActive.png";
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
