@@ -3,6 +3,9 @@ html {
   font-family: "Victor Mono", monospace;
   font-style: normal;
 }
+* {
+  transition: all ease-in-out 0.3s;
+}
 body {
   background-color: #ffffff;
   margin: 0;
